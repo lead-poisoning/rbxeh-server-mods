@@ -1,8 +1,8 @@
-// ====================== CONFIG — edit these two lines ======================
+// ================================== CONFIG ==================================
 const CONFIG = {
-  owner: "YOUR_GITHUB_USERNAME",   // e.g. "ran"
-  repo: "YOUR_REPO_NAME",          // e.g. "server-mods"
-  branch: "main",                  // branch the mods/ and new_mods/ folders live on
+  owner: "lead-poisoning",
+  repo: "rbxeh-server-mods",
+  branch: "main",
   modsFolder: "mods",
   newModsFolder: "new_mods",
   zipFilename: "server-mods.zip",
