@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Server Mods</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-text">
+      <h1>Server Mods</h1>
+      <p class="subtitle">Everything currently installed on the server. Grab it below and drop it in your <code>mods</code> folder.</p>
+    </div>
+    <button id="download-btn" class="download-btn">
+      <span id="download-btn-label">⬇ Download All Mods (.zip)</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="new-mods-section" class="mods-section hidden">
+      <h2><span class="pulse-dot"></span> New Mods</h2>
+      <p class="section-hint">Just added — make sure you grab these too.</p>
+      <div id="new-mods-grid" class="mods-grid"></div>
+    </section>
+
+    <section id="mods-section" class="mods-section">
+      <h2>All Mods</h2>
+      <div id="mods-grid" class="mods-grid">
+        <p class="status-text" id="status-text">Loading mod list…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mod info pulled live from <a href="https://modrinth.com" target="_blank" rel="noopener">Modrinth</a>.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
