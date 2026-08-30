@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-08-30T17:28:13.500Z",
+  "mods": [
+    {
+      "filename": "1.3.1-TPA_mod-26.2.jar",
+      "folder": "mods",
+      "title": "Teletransportation Accept (TPA)",
+      "slug": "tpa",
+      "iconUrl": "https://cdn.modrinth.com/data/6h6n9XJ9/393d7ccbcafabf47016bea7d405811b6b54ae09a.png",
+      "url": "https://modrinth.com/mod/tpa"
+    },
+    {
+      "filename": "BadOptimizations-2.4.1-26.2-fabric.jar",
+      "folder": "mods",
+      "title": "BadOptimizations",
+      "slug": "badoptimizations",
+      "iconUrl": null,
+      "url": "https://modrinth.com/mod/badoptimizations"
+    },
+    {
+      "filename": "BetterF3-19.0.0-Fabric-26.2.jar",
+      "folder": "mods",
+      "title": "BetterF3",
+      "slug": "betterf3",
+      "iconUrl": "https://cdn.modrinth.com//data/8shC1gFX/icon.png",
+      "url": "https://modrinth.com/mod/betterf3"
+    },
+    {
+      "filename": "BiomesOPlenty-fabric-26.2-26.2.0.0.27.jar",
+      "folder": "mods",
+      "title": "Biomes O' Plenty",
+      "slug": "biomes-o-plenty",
+      "iconUrl": "https://cdn.modrinth.com/data/HXF82T3G/ffb870e12c325b795d54833f8f899126553ef06f.png",
+      "url": "https://modrinth.com/mod/biomes-o-plenty"
+    },
+    {
+      "filename": "Discord-MC-Chat-3.0.0-beta.2.jar",
+      "folder": "mods",
+      "title": "Discord MC Chat",
+      "slug": "discord-mc-chat",
+      "iconUrl": "https://cdn.modrinth.com/data/D0sHdnXY/icon.png",
+      "url": "https://modrinth.com/mod/discord-mc-chat"
+    },
+    {
+      "filename": "Essential_1-4-1-1_fabric_26-2.jar",
+      "folder": "mods",
+      "title": "Essential Mod",
+      "slug": "essential",
+      "iconUrl": "https://cdn.modrinth.com/data/k2ZPuTBm/7f7ac7cf2a46d5f02e9644372c44b3095ad61ffb_96.webp",
+      "url": "https://modrinth.com/mod/essential"
+    },
+    {
+      "filename": "ForgeConfigAPIPort-v26.2.1-mc26.2.x-Fabric.jar",
+      "folder": "mods",
+      "title": "Forge Config API Port",
+      "slug": "forge-config-api-port",
+      "iconUrl": "https://cdn.modrinth.com/data/ohNO6lps/cb3b942cc18a66a0f35f802e004713f134e46cc2_96.webp",
+      "url": "https://modrinth.com/mod/forge-config-api-port"
+    },
+    {
+      "filename": "GlitchCore-fabric-26.2-26.2.0.0.0.jar",
+      "folder": "mods",
+      "title": "GlitchCore",
+      "slug": "glitchcore",
+      "iconUrl": "https://cdn.modrinth.com/data/s3dmwKy5/76dd9e7bc737a02b723730ab34f536ab43936980.png",
+      "url": "https://modrinth.com/mod/glitchcore"
+    },
+    {
+      "filename": "ImmediatelyFast-Fabric-1.16.3+26.2.jar",
+      "folder": "mods",
+      "title": "ImmediatelyFast",
+      "slug": "immediatelyfast",
+      "iconUrl": "https://cdn.modrinth.com/data/5ZwdcRci/e57b6b451425692ac17ad322d5e14bea686a383a_96.webp",
+      "url": "https://modrinth.com/mod/immediatelyfast"
+    },
+    {
+      "filename": "Jade-mc26.2-Fabric-26.2.11.jar",
+      "folder": "mods",
+      "title": "Jade 🔍",
+      "slug": "jade",
+      "iconUrl": "https://cdn.modrinth.com/data/nvQzSEkH/b04217bc2b7dc524c4d12f81ff42cc1cefb9b0fc_96.webp",
+      "url": "https://modrinth.com/mod/jade"
+    },
+    {
+      "filename": "MouseTweaks-fabric-mc26.2-2.31.jar",
+      "folder": "mods",
+      "title": "Mouse Tweaks",
+      "slug": "mouse-tweaks",
+      "iconUrl": "https://cdn.modrinth.com/data/aC3cM3Vq/6c0eaa4e60a9c87f4766f222ff63286f09da32c0_96.webp",
+      "url": "https://modrinth.com/mod/mouse-tweaks"
+    },
+    {
+      "filename": "TerraBlender-fabric-26.2-26.2.0.0.2.jar",
+      "folder": "mods",
+      "title": "TerraBlender",
+      "slug": "terrablender",
+      "iconUrl": "https://cdn.modrinth.com/data/kkmrDlKT/ffe690c604b123c63ee77a5baf76cf008cb73663.png",
+      "url": "https://modrinth.com/mod/terrablender"
+    },
+    {
+      "filename": "appleskin-fabric-mc26.2-3.0.10.jar",
+      "folder": "mods",
+      "title": "AppleSkin",
+      "slug": "appleskin",
+      "iconUrl": "https://cdn.modrinth.com/data/EsAfCjCV/icon.png",
+      "url": "https://modrinth.com/mod/appleskin"
+    },
+    {
+      "filename": "clientcommands-2.15.1.jar",
+      "folder": "mods",
+      "title": "clientcommands",
+      "slug": "client-commands",
+      "iconUrl": "https://cdn.modrinth.com/data/7Coz83fv/76df7a8a5563f83c998be7ac8572964da59306c8_96.webp",
+      "url": "https://modrinth.com/mod/client-commands"
+    },
+    {
+      "filename": "clientsort-fabric-3.103.1+26.2.jar",
+      "folder": "mods",
+      "title": "Client Sort",
+      "slug": "clientsort",
+      "iconUrl": "https://cdn.modrinth.com/data/K0AkAin6/7cf06458738334bd5d8cd77d086529d453f56ef6_96.webp",
+      "url": "https://modrinth.com/mod/clientsort"
+    },
+    {
+      "filename": "cloth-config-26.2.155.jar",
+      "folder": "mods",
+      "title": "Cloth Config API",
+      "slug": "cloth-config",
+      "iconUrl": "https://cdn.modrinth.com/data/9s6osm5g/ed8a2316cbb6f4fc5f510e8e13a59a85cbbbff4d_96.webp",
+      "url": "https://modrinth.com/mod/cloth-config"
+    },
+    {
+      "filename": "continuity-3.0.1+26.2.jar",
+      "folder": "mods",
+      "title": "Continuity",
+      "slug": "continuity",
+      "iconUrl": "https://cdn.modrinth.com/data/1IjD5062/icon.png",
+      "url": "https://modrinth.com/mod/continuity"
+    },
+    {
+      "filename": "controlify-3.4.1+mc26.2-universal.jar",
+      "folder": "mods",
+      "title": "Controlify (Controller support)",
+      "slug": "controlify",
+      "iconUrl": "https://cdn.modrinth.com/data/DOUdJVEm/5a6c126c4c761ba3e8e9d3ef09a68e16ff60ff22_96.webp",
+      "url": "https://modrinth.com/mod/controlify"
+    },
+    {
+      "filename": "cullleaves-fabric-4.1.2+26.2.jar",
+      "folder": "mods",
+      "title": "Cull Leaves",
+      "slug": "cull-leaves",
+      "iconUrl": "https://cdn.modrinth.com/data/GNxdLCoP/icon.png",
+      "url": "https://modrinth.com/mod/cull-leaves"
+    },
+    {
+      "filename": "disable-dimensions-0.9.0+mod.jar",
+      "folder": "mods",
+      "title": "Disable Dimensions",
+      "slug": "disable-dimensions",
+      "iconUrl": "https://cdn.modrinth.com/data/pIHt096L/6149714d79db06710642586e2b613cdec1cd07b4_96.webp",
+      "url": "https://modrinth.com/mod/disable-dimensions"
+    },
+    {
+      "filename": "dynamic-fps-3.11.9+minecraft-26.2.0-fabric.jar",
+      "folder": "mods",
+      "title": "Dynamic FPS",
+      "slug": "dynamic-fps",
+      "iconUrl": "https://cdn.modrinth.com/data/LQ3K71Q1/5056368d0d87c1a9f3efead0cb48ab39a4ea87bf_96.webp",
+      "url": "https://modrinth.com/mod/dynamic-fps"
+    },
+    {
+      "filename": "entityculling-fabric-1.10.5-mc26.2.jar",
+      "folder": "mods",
+      "title": "Entity Culling",
+      "slug": "entityculling",
+      "iconUrl": "https://cdn.modrinth.com/data/NNAgCjsB/7873452d6cede4daed12da3d7d8c193ab88b4fd6_96.webp",
+      "url": "https://modrinth.com/mod/entityculling"
+    },
+    {
+      "filename": "fabric-api-0.158.0+26.2.jar",
+      "folder": "mods",
+      "title": "Fabric API",
+      "slug": "fabric-api",
+      "iconUrl": "https://cdn.modrinth.com/data/P7dR8mSH/icon.png",
+      "url": "https://modrinth.com/mod/fabric-api"
+    },
+    {
+      "filename": "fallingleaves-2.0.7+26.1.jar",
+      "folder": "mods",
+      "title": "Falling Leaves",
+      "slug": "fallingleaves",
+      "iconUrl": "https://cdn.modrinth.com/data/WhbRG4iK/58f5b66cb54787d9c25228d667f61144371c3867_96.webp",
+      "url": "https://modrinth.com/mod/fallingleaves"
+    },
+    {
+      "filename": "ferritecore-9.0.0-fabric.jar",
+      "folder": "mods",
+      "title": "FerriteCore",
+      "slug": "ferrite-core",
+      "iconUrl": "https://cdn.modrinth.com/data/uXXizFIs/222a126f26f8f9ae1eb339f3b767677f18bff31f_96.webp",
+      "url": "https://modrinth.com/mod/ferrite-core"
+    },
+    {
+      "filename": "iris-fabric-1.11.2+mc26.2.jar",
+      "folder": "mods",
+      "title": "Iris Shaders",
+      "slug": "iris",
+      "iconUrl": "https://cdn.modrinth.com/data/YL57xq9U/18d0e7f076d3d6ed5bedd472b853909aac5da202_96.webp",
+      "url": "https://modrinth.com/mod/iris"
+    },
+    {
+      "filename": "jei-26.2-fabric-30.26.0.182.jar",
+      "folder": "mods",
+      "title": "Just Enough Items (JEI)",
+      "slug": "jei",
+      "iconUrl": "https://cdn.modrinth.com/data/u6dRKJwZ/4a3f18ac0d096c9f8e9176984c44be4e58f94c89_96.webp",
+      "url": "https://modrinth.com/mod/jei"
+    },
+    {
+      "filename": "lithium-fabric-0.25.3+mc26.2.jar",
+      "folder": "mods",
+      "title": "Lithium",
+      "slug": "lithium",
+      "iconUrl": "https://cdn.modrinth.com/data/gvQqBUqZ/bcc8686c13af0143adf4285d741256af824f70b7_96.webp",
+      "url": "https://modrinth.com/mod/lithium"
+    },
+    {
+      "filename": "modmenu-20.0.1.jar",
+      "folder": "mods",
+      "title": "Mod Menu",
+      "slug": "modmenu",
+      "iconUrl": "https://cdn.modrinth.com/data/mOgUt4GM/5a20ed1450a0e1e79a1fe04e61bb4e5878bf1d20.png",
+      "url": "https://modrinth.com/mod/modmenu"
+    },
+    {
+      "filename": "moreculling-fabric-26.2-1.8.1.jar",
+      "folder": "mods",
+      "title": "More Culling",
+      "slug": "moreculling",
+      "iconUrl": "https://cdn.modrinth.com/data/51shyZVL/c51b07193b56e952269ef50101d12aecba2b4747_96.webp",
+      "url": "https://modrinth.com/mod/moreculling"
+    },
+    {
+      "filename": "open-parties-and-claims-fabric-26.2-0.30.3.jar",
+      "folder": "mods",
+      "title": "Open Parties and Claims",
+      "slug": "open-parties-and-claims",
+      "iconUrl": "https://cdn.modrinth.com/data/gF3BGWvG/410c5443b268912b11709e7d03dd9ec3fda38ea5.png",
+      "url": "https://modrinth.com/mod/open-parties-and-claims"
+    },
+    {
+      "filename": "placeholder-api-3.1.0-beta.1+26.2.jar",
+      "folder": "mods",
+      "title": "Text Placeholder API",
+      "slug": "placeholder-api",
+      "iconUrl": "https://cdn.modrinth.com/data/eXts2L7r/e9c9990896e6422bffc5f73d2c41b8f077348f83.png",
+      "url": "https://modrinth.com/mod/placeholder-api"
+    },
+    {
+      "filename": "reeses-sodium-options-fabric-2.2.3+mc26.2.jar",
+      "folder": "mods",
+      "title": "Reese's Sodium Options",
+      "slug": "reeses-sodium-options",
+      "iconUrl": "https://cdn.modrinth.com/data/Bh37bMuy/icon.png",
+      "url": "https://modrinth.com/mod/reeses-sodium-options"
+    },
+    {
+      "filename": "shulkerboxtooltip-fabric-5.4.0+26.2.jar",
+      "folder": "mods",
+      "title": "Shulker Box Tooltip",
+      "slug": "shulkerboxtooltip",
+      "iconUrl": "https://cdn.modrinth.com/data/2M01OLQq/bb490716cf2590cf84100a495931c3d4743bce43_96.webp",
+      "url": "https://modrinth.com/mod/shulkerboxtooltip"
+    },
+    {
+      "filename": "sodium-extra-fabric-0.9.3+mc26.2.jar",
+      "folder": "mods",
+      "title": "Sodium Extra",
+      "slug": "sodium-extra",
+      "iconUrl": "https://cdn.modrinth.com/data/PtjYWJkn/0df4fb22a11e1dcb5e83cb0aadd275b571aca7a9_96.webp",
+      "url": "https://modrinth.com/mod/sodium-extra"
+    },
+    {
+      "filename": "sodium-fabric-0.9.1+mc26.2.jar",
+      "folder": "mods",
+      "title": "Sodium",
+      "slug": "sodium",
+      "iconUrl": "https://cdn.modrinth.com/data/AANobbMI/295862f4724dc3f78df3447ad6072b2dcd3ef0c9_96.webp",
+      "url": "https://modrinth.com/mod/sodium"
+    },
+    {
+      "filename": "xaerominimap-fabric-26.2-26.4.2.jar",
+      "folder": "mods",
+      "title": "Xaero's Minimap",
+      "slug": "xaeros-minimap",
+      "iconUrl": "https://cdn.modrinth.com/data/1bokaNcj/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp",
+      "url": "https://modrinth.com/mod/xaeros-minimap"
+    },
+    {
+      "filename": "xaeroworldmap-fabric-26.2-1.45.0.jar",
+      "folder": "mods",
+      "title": "Xaero's World Map",
+      "slug": "xaeros-world-map",
+      "iconUrl": "https://cdn.modrinth.com/data/NcUtCpym/354080f65407e49f486fcf9c4580e82c45ae63b8_96.webp",
+      "url": "https://modrinth.com/mod/xaeros-world-map"
+    },
+    {
+      "filename": "yet_another_config_lib_v3-3.9.6+26.2-fabric.jar",
+      "folder": "mods",
+      "title": "YetAnotherConfigLib (YACL)",
+      "slug": "yacl",
+      "iconUrl": "https://cdn.modrinth.com/data/1eAoo2KR/08c0cd32515e260f4bb20bbc0696510041523f9a_96.webp",
+      "url": "https://modrinth.com/mod/yacl"
+    },
+    {
+      "filename": "collective-26.2.0-8.39.jar",
+      "folder": "new_mods",
+      "title": "Collective",
+      "slug": "collective",
+      "iconUrl": "https://cdn.modrinth.com/data/e0M1UDsY/f5e4fe9ac298e2c14591920d6bda937c566accd0_96.webp",
+      "url": "https://modrinth.com/mod/collective"
+    },
+    {
+      "filename": "treeharvester-26.2.0-9.4.jar",
+      "folder": "new_mods",
+      "title": "Tree Harvester",
+      "slug": "tree-harvester",
+      "iconUrl": "https://cdn.modrinth.com/data/abooMhox/d23c284917ab08182332006fd0e1dc62d258c99d_96.webp",
+      "url": "https://modrinth.com/mod/tree-harvester"
+    }
+  ]
+}
