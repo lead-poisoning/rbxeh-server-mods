@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T17:30:44.095Z",
+  "generatedAt": "2026-08-31T16:40:08.828Z",
   "mods": [
     {
       "filename": "1.3.1-TPA_mod-26.2.jar",
@@ -128,6 +128,14 @@
       "slug": "cloth-config",
       "iconUrl": "https://cdn.modrinth.com/data/9s6osm5g/ed8a2316cbb6f4fc5f510e8e13a59a85cbbbff4d_96.webp",
       "url": "https://modrinth.com/mod/cloth-config"
+    },
+    {
+      "filename": "collective-26.2.0-8.39.jar",
+      "folder": "mods",
+      "title": "Collective",
+      "slug": "collective",
+      "iconUrl": "https://cdn.modrinth.com/data/e0M1UDsY/f5e4fe9ac298e2c14591920d6bda937c566accd0_96.webp",
+      "url": "https://modrinth.com/mod/collective"
     },
     {
       "filename": "continuity-3.0.1+26.2.jar",
@@ -290,6 +298,14 @@
       "url": "https://modrinth.com/mod/sodium"
     },
     {
+      "filename": "treeharvester-26.2.0-9.4.jar",
+      "folder": "mods",
+      "title": "Tree Harvester",
+      "slug": "tree-harvester",
+      "iconUrl": "https://cdn.modrinth.com/data/abooMhox/d23c284917ab08182332006fd0e1dc62d258c99d_96.webp",
+      "url": "https://modrinth.com/mod/tree-harvester"
+    },
+    {
       "filename": "xaerominimap-fabric-26.2-26.4.2.jar",
       "folder": "mods",
       "title": "Xaero's Minimap",
@@ -314,20 +330,124 @@
       "url": "https://modrinth.com/mod/yacl"
     },
     {
-      "filename": "collective-26.2.0-8.39.jar",
+      "filename": "AlwaysShield-1.2.1+mc26.2-Fabric.jar",
       "folder": "new_mods",
-      "title": "Collective",
-      "slug": "collective",
-      "iconUrl": "https://cdn.modrinth.com/data/e0M1UDsY/f5e4fe9ac298e2c14591920d6bda937c566accd0_96.webp",
-      "url": "https://modrinth.com/mod/collective"
+      "title": "Always Shield",
+      "slug": "always-shield",
+      "iconUrl": "https://cdn.modrinth.com/data/f5J5N4a3/a8031c3f681cd155cb20ae56b2fddc17b8e95782_96.webp",
+      "url": "https://modrinth.com/mod/always-shield"
     },
     {
-      "filename": "treeharvester-26.2.0-9.4.jar",
+      "filename": "EasyAnvils-v26.2.3-mc26.2.x-Fabric.jar",
       "folder": "new_mods",
-      "title": "Tree Harvester",
-      "slug": "tree-harvester",
-      "iconUrl": "https://cdn.modrinth.com/data/abooMhox/d23c284917ab08182332006fd0e1dc62d258c99d_96.webp",
-      "url": "https://modrinth.com/mod/tree-harvester"
+      "title": "Easy Anvils",
+      "slug": "easy-anvils",
+      "iconUrl": "https://cdn.modrinth.com/data/OZBR5JT5/6d18be3377180e9afe80da0551934b29bdd2bacb_96.webp",
+      "url": "https://modrinth.com/mod/easy-anvils"
+    },
+    {
+      "filename": "FarmersDelight-26.2-3.6.19+refabricated.jar",
+      "folder": "new_mods",
+      "title": "Farmer's Delight Refabricated",
+      "slug": "farmers-delight-refabricated",
+      "iconUrl": "https://cdn.modrinth.com/data/7vxePowz/26e8448993e9bda4dba92b6e7a1a13d9c4333138.png",
+      "url": "https://modrinth.com/mod/farmers-delight-refabricated"
+    },
+    {
+      "filename": "ForgeConfigAPIPort-v26.2.1-mc26.2.x-Fabric.jar",
+      "folder": "new_mods",
+      "title": "Forge Config API Port",
+      "slug": "forge-config-api-port",
+      "iconUrl": "https://cdn.modrinth.com/data/ohNO6lps/cb3b942cc18a66a0f35f802e004713f134e46cc2_96.webp",
+      "url": "https://modrinth.com/mod/forge-config-api-port"
+    },
+    {
+      "filename": "PuzzlesLib-v26.2.3-mc26.2.x-Fabric.jar",
+      "folder": "new_mods",
+      "title": "Puzzles Lib",
+      "slug": "puzzles-lib",
+      "iconUrl": "https://cdn.modrinth.com/data/QAGBst4M/c78216c61f65b6ce82593e4e92e9c358402bb524_96.webp",
+      "url": "https://modrinth.com/mod/puzzles-lib"
+    },
+    {
+      "filename": "comforts-fabric-16.0.0+26.2.jar",
+      "folder": "new_mods",
+      "title": "Comforts",
+      "slug": "comforts",
+      "iconUrl": "https://cdn.modrinth.com/data/SaCpeal4/ed4840f0c9a30e04ad88413bd82cd762dd6ec95d.png",
+      "url": "https://modrinth.com/mod/comforts"
+    },
+    {
+      "filename": "durabilitytooltip-1.1.6-fabric-mc26.2.jar",
+      "folder": "new_mods",
+      "title": "Durability Tooltip",
+      "slug": "durability-tooltip",
+      "iconUrl": "https://cdn.modrinth.com/data/smUP7V3r/icon.png",
+      "url": "https://modrinth.com/mod/durability-tooltip"
+    },
+    {
+      "filename": "graves-3.12.0+26.2.jar",
+      "folder": "new_mods",
+      "title": "Universal Graves",
+      "slug": "universal-graves",
+      "iconUrl": "https://cdn.modrinth.com/data/yn9u3ypm/a933032aa191fdc43cd439074f5713f8351e7af9.png",
+      "url": "https://modrinth.com/mod/universal-graves"
+    },
+    {
+      "filename": "jamlib-fabric-2.3.1+26.2.x.jar",
+      "folder": "new_mods",
+      "title": "JamLib",
+      "slug": "jamlib",
+      "iconUrl": "https://cdn.modrinth.com/data/IYY9Siz8/7585f4d35b18467c2d0d9c496e3b7cd4919c413a_96.webp",
+      "url": "https://modrinth.com/mod/jamlib"
+    },
+    {
+      "filename": "packedup-1.1.1-fabric-mc26.2.jar",
+      "folder": "new_mods",
+      "title": "Packed Up (Backpacks)",
+      "slug": "packed-up-backpacks",
+      "iconUrl": "https://cdn.modrinth.com/data/ZbFzEauY/a75eed7855f247a447250cee135896539aba5def_96.webp",
+      "url": "https://modrinth.com/mod/packed-up-backpacks"
+    },
+    {
+      "filename": "polymer-bundled-0.17.4+26.2.jar",
+      "folder": "new_mods",
+      "title": "Polymer",
+      "slug": "polymer",
+      "iconUrl": "https://cdn.modrinth.com/data/xGdtZczs/icon.png",
+      "url": "https://modrinth.com/mod/polymer"
+    },
+    {
+      "filename": "rightclickharvest-fabric-4.6.2+26.2.x.jar",
+      "folder": "new_mods",
+      "title": "RightClickHarvest",
+      "slug": "rightclickharvest",
+      "iconUrl": "https://cdn.modrinth.com/data/Cnejf5xM/b6e535989217836c2adc49b06f4b3c8f429afda3_96.webp",
+      "url": "https://modrinth.com/mod/rightclickharvest"
+    },
+    {
+      "filename": "supermartijn642configlib-1.1.8-fabric-mc26.2.jar",
+      "folder": "new_mods",
+      "title": "SuperMartijn642's Config Lib",
+      "slug": "supermartijn642s-config-lib",
+      "iconUrl": "https://cdn.modrinth.com/data/LN9BxssP/ad25597dd1b10b49cdfbc97c70d401e3158000f7_96.webp",
+      "url": "https://modrinth.com/mod/supermartijn642s-config-lib"
+    },
+    {
+      "filename": "supermartijn642corelib-1.1.24a-fabric-mc26.2.jar",
+      "folder": "new_mods",
+      "title": "SuperMartijn642's Core Lib",
+      "slug": "supermartijn642s-core-lib",
+      "iconUrl": "https://cdn.modrinth.com/data/rOUBggPv/e745e719d7fe2aa0335d819ca9c97defbf2e0bcb_96.webp",
+      "url": "https://modrinth.com/mod/supermartijn642s-core-lib"
+    },
+    {
+      "filename": "trade-cycling-fabric-1.0.21+26.2.jar",
+      "folder": "new_mods",
+      "title": "Trade Cycling",
+      "slug": "trade-cycling",
+      "iconUrl": "https://cdn.modrinth.com/data/qpPoAL6m/91dcbfba1d821a7a9248ec8191359d842332cc97.png",
+      "url": "https://modrinth.com/mod/trade-cycling"
     }
   ]
 }
