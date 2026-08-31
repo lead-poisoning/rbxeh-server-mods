@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T16:40:08.828Z",
+  "generatedAt": "2026-08-31T16:45:52.609Z",
   "mods": [
     {
       "filename": "1.3.1-TPA_mod-26.2.jar",
@@ -66,7 +66,7 @@
       "url": "https://modrinth.com/mod/glitchcore"
     },
     {
-      "filename": "ImmediatelyFast-Fabric-1.16.3+26.2.jar",
+      "filename": "ImmediatelyFast-Fabric-1.16.4+26.2.jar",
       "folder": "mods",
       "title": "ImmediatelyFast",
       "slug": "immediatelyfast",
@@ -218,7 +218,7 @@
       "url": "https://modrinth.com/mod/iris"
     },
     {
-      "filename": "jei-26.2-fabric-30.26.0.182.jar",
+      "filename": "jei-26.2-fabric-30.29.0.199.jar",
       "folder": "mods",
       "title": "Just Enough Items (JEI)",
       "slug": "jei",
