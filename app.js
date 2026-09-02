@@ -1,6 +1,5 @@
 const CONFIG = {
   metadataUrl: "metadata.json",
-  zipFilename: "server-mods.zip",
 };
 
 init();
@@ -23,7 +22,6 @@ async function init() {
   }
 
   render(mods);
-  wireDownloadButton(mods);
 }
 
 function render(mods) {
@@ -104,46 +102,3 @@ function showError(message) {
   }
 }
 
-function wireDownloadButton(mods) {
-  const btn = document.getElementById("download-btn");
-  const label = document.getElementById("download-btn-label");
-
-  btn.addEventListener("click", async () => {
-    btn.disabled = true;
-    const zip = new JSZip();
-    const total = mods.length;
-    let done = 0;
-    label.textContent = `Fetching… (0/${total})`;
-
-    try {
-      await Promise.all(
-        mods.map(async (mod) => {
-          const res = await fetch(`${mod.folder}/${encodeURIComponent(mod.filename)}`);
-          if (res.ok) zip.file(mod.filename, await res.arrayBuffer());
-          done++;
-          label.textContent = `Fetching… (${done}/${total})`;
-        })
-      );
-
-      label.textContent = "Zipping…";
-      const blob = await zip.generateAsync({ type: "blob" });
-
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = CONFIG.zipFilename;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-    } catch (err) {
-      console.error(err);
-      label.textContent = "⬇ Download failed — try again";
-      btn.disabled = false;
-      return;
-    }
-
-    label.textContent = "⬇ Download All Mods (.zip)";
-    btn.disabled = false;
-  });
-}
