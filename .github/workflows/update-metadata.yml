@@ -1,4 +1,5 @@
 name: Update mod metadata
+
 on:
   push:
     branches: [main]
@@ -7,26 +8,41 @@ on:
       - "new_mods/**"
       - "scripts/generate-metadata.js"
   workflow_dispatch: {}
+
 permissions:
   contents: write
+
 jobs:
   update-metadata:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
       - name: Generate metadata.json
         run: node scripts/generate-metadata.js
+
       - name: Build mods zip
         run: |
           rm -f server-mods.zip
           zip -j -r server-mods.zip mods new_mods
-      - name: Commit metadata.json and zip
+
+      - name: Publish mods zip as a release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest-mods --yes --cleanup-tag || true
+          gh release create latest-mods server-mods.zip \
+            --title "Server mods (auto-built)" \
+            --notes "Rebuilt automatically whenever mods change. This is the file the site's download button links to."
+
+      - name: Commit metadata.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add metadata.json server-mods.zip
+          git add metadata.json
           git diff --staged --quiet || git commit -m "Update mod metadata"
           git push
