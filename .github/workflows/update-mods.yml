@@ -1,0 +1,49 @@
+name: Update mods
+
+# Run it by hand: Actions tab -> "Update mods" -> Run workflow.
+# It finds newer Modrinth builds, drops any update that would break another mod,
+# and opens a pull request. Merging the PR triggers your normal "Update mod metadata" workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mc_version:
+        description: Minecraft version to target
+        default: "26.2"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Find compatible updates
+        env:
+          MC_VERSION: ${{ inputs.mc_version }}
+        run: python scripts/update_mods.py --mc "$MC_VERSION" --report "$RUNNER_TEMP/update-report.md"
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain mods new_mods)" ]; then
+            echo "Nothing to update."
+            exit 0
+          fi
+          branch="mod-updates-$(date +%Y%m%d-%H%M)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A mods new_mods
+          git commit -m "Update mods (compatibility-checked)"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "Update mods" --body-file "$RUNNER_TEMP/update-report.md"
