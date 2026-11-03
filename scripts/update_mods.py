@@ -7,7 +7,10 @@ How it works
   3. Check the whole pack (current jars + candidates). If an update would break a dependency range,
      a `breaks` rule, or a Minecraft version pin, that update is rolled back and the check repeats
      until the pack is consistent.
-  4. Replace the old jars in place (same folder, old file removed) and write a markdown report.
+  4. If anything was updated: move the jars already in new_mods/ (the previous batch) into mods/,
+     then put each updated jar into new_mods/. The old version of an updated mod is deleted from
+     wherever it was, so the pack never ends up with two versions of one mod. A markdown report
+     is written. If nothing can be updated, no files are touched.
 
 Standard library only. Needs network access to api.modrinth.com / cdn.modrinth.com
 (true on GitHub Actions runners).
@@ -275,12 +278,55 @@ def pick_file(version):
     return next((f for f in files if f.get("primary")), files[0])
 
 
+def place(new_jar, old_jar, repo, updated_folder):
+    """Put the new jar in updated_folder ('same' = next to the old jar) and delete the old jar.
+
+    mods/ and new_mods/ are zipped together, so the old jar must always go, otherwise the pack
+    would ship two versions of the same mod and Fabric would refuse to start.
+    """
+    new_jar, old_jar = Path(new_jar), Path(old_jar)
+    dest_dir = old_jar.parent if updated_folder == "same" else Path(repo) / updated_folder
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest = dest_dir / new_jar.name
+    shutil.copy2(new_jar, dest)
+    if dest.resolve() != old_jar.resolve():
+        old_jar.unlink()
+    return dest
+
+
+def apply_updates(repo, updated_folder, updates):
+    """updates: list of (staged_jar, old_jar). Returns names of jars graduated from new_mods/ to mods/.
+
+    Only when something is actually being updated: first every jar already sitting in updated_folder
+    (the previous batch) moves to mods/, then each updated jar goes into updated_folder. So new_mods/
+    always holds exactly what changed in the latest run. Old versions of updated mods are deleted.
+    """
+    moved = []
+    if updates and updated_folder != "same":
+        replaced = {Path(old).resolve() for _, old in updates}
+        src = Path(repo) / updated_folder
+        dst = Path(repo) / FOLDERS[0]
+        if src.is_dir() and src.resolve() != dst.resolve():
+            dst.mkdir(parents=True, exist_ok=True)
+            for jar in sorted(src.glob("*.jar")):
+                if jar.resolve() in replaced:
+                    continue  # about to be replaced by its newer build; place() deletes it
+                shutil.move(str(jar), str(dst / jar.name))
+                moved.append(jar.name)
+    for staged, old in updates:
+        place(staged, old, repo, updated_folder)
+    return moved
+
+
 # --------------------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo", default=".", help="repo root containing mods/ and new_mods/")
     ap.add_argument("--mc", default="26.2", help="Minecraft version to target")
     ap.add_argument("--loader", default="fabric")
+    ap.add_argument("--updated-folder", default="new_mods",
+                    help="folder that receives updated jars (default new_mods); 'same' keeps each jar "
+                         "in the folder it was already in")
     ap.add_argument("--report", default="update-report.md")
     ap.add_argument("--dry-run", action="store_true", help="report only, don't touch any jar")
     args = ap.parse_args()
@@ -340,17 +386,15 @@ def main():
         notes["skipped"].append((key, why))
 
     # ---- apply
+    moved = []
     if not args.dry_run:
-        for key in chosen:
-            old_path = jars[key]
-            shutil.copy2(staged[key], old_path.parent / staged[key].name)
-            if old_path.name != staged[key].name:
-                old_path.unlink()
+        moved = apply_updates(repo, args.updated_folder, [(staged[k], jars[k]) for k in sorted(chosen)])
     shutil.rmtree(stage_dir, ignore_errors=True)
 
     # ---- report
     lines = [f"# Mod update report (Minecraft {args.mc}, {args.loader})", ""]
-    lines += [f"**{len(chosen)} updated**, {len(notes['skipped'])} held back, "
+    where = "kept in their current folders" if args.updated_folder == "same" else f"moved to `{args.updated_folder}/`"
+    lines += [f"**{len(chosen)} updated** (updated jars {where}), {len(notes['skipped'])} held back, "
               f"{len(notes['uptodate'])} already current or no newer {args.mc} build, "
               f"{len(notes['unknown'])} not recognised by Modrinth.", ""]
     if chosen:
@@ -360,6 +404,9 @@ def main():
             lines.append(f"| {old[key]['id']} | {cur['version_number']} | {lat['version_number']} "
                          f"({lat['version_type']}) |")
         lines.append("")
+    if moved:
+        lines += [f"## Moved from `{args.updated_folder}/` to `mods/` (previous batch)", ""]
+        lines += [f"- `{name}`" for name in moved] + [""]
     if notes["skipped"]:
         lines += ["## Held back (would break compatibility or not safe to auto-update)", ""]
         for key, why in sorted(notes["skipped"]):
